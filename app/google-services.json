@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "62825562998",
+    "project_id": "mysalaryapp-a12f9",
+    "storage_bucket": "mysalaryapp-a12f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62825562998:android:1202f77893cddc7893b057",
+        "android_client_info": {
+          "package_name": "com.example.mysalaryapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv5_YbrSp0nGJyI8bm-hco_KR7HWlwaV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

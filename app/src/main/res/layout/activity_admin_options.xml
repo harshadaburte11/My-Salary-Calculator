@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE5E5E5">
+
+    <ImageView
+        android:id="@+id/salaryCalculatorimg"
+        android:layout_width="380dp"
+        android:layout_height="377dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="center"
+        android:src="@drawable/salryimg"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+
+
+    <Button
+        android:id="@+id/registeremp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salaryCalculatorimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="#FF0099CC"
+        android:onClick="onClick"
+        android:text="Register Employee"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calculatesalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registeremp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="#FF0099CC"
+        android:onClick="onClick"
+        android:text="Calculate Salary"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

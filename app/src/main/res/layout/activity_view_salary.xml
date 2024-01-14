@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:visibility="visible">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/viewsalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewsalaryImageView"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="View Salary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/viewsalaryImageView"
+        android:layout_width="308dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+
+        android:scaleType="center"
+        android:src="@drawable/viewsal"
+        android:visibility="visible" />
+
+
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/viewsalText"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Select Month" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="displaySalary"
+        android:text="Display Salary" />
+
+
+    <TextView
+        android:id="@+id/salaryResult"
+        android:layout_width="393dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/selectMonth"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="7dp"
+
+        android:text="Total Salary" />
+
+    <TextView
+        android:id="@+id/ha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectMonth"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_currency_rupee_24"
+        android:hint="Enter HA"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/ta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ha"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_currency_rupee_24"
+        android:hint="Enter TA"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/da"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ta"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_currency_rupee_24"
+        android:hint="Enter DA"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/pf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/da"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/baseline_currency_rupee_24"
+        android:hint="Enter PF"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pf"
+        android:layout_marginTop="16dp"
+        android:onClick="backToLogin"
+        android:text="Back " />
+
+</LinearLayout>
+</ScrollView>

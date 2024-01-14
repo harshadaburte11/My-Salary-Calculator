@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/loginsalaryimg"
+        android:layout_width="380dp"
+        android:layout_height="377dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="center"
+        android:src="@drawable/loginsal"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/loginadmbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeMessageTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="#FF0099CC"
+        android:onClick="onClick"
+        android:text="Login As Admin"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+
+    <Button
+        android:id="@+id/loginempbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="#FF0099CC"
+        android:onClick="onClick"
+        android:text="Login As Employee"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/calculatesalaryheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Salary"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Employee by Initials"
+        android:drawableLeft="@drawable/baseline_account_box_24"
+        android:id="@+id/searchEmp"
+        android:layout_below="@id/calculatesalaryheading"
+        android:layout_marginBottom="8dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Employee"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnSearchEmp"
+        android:layout_below="@id/searchEmp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+
+
+    <Spinner
+        android:id="@+id/employeeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Employee Name"
+        android:layout_below="@id/btnSearchEmp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="HA"
+        android:drawableLeft="@drawable/baseline_home_24"
+        android:id="@+id/haEditText"
+        android:layout_below="@id/employeeSpinner"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TA"
+        android:drawableLeft="@drawable/baseline_time_to_leave_24"
+        android:id="@+id/taEditText"
+        android:layout_below="@id/haEditText"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DA"
+        android:drawableLeft="@drawable/baseline_dinner_dining_24"
+        android:id="@+id/daEditText"
+        android:layout_below="@id/taEditText"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PF"
+        android:drawableLeft="@drawable/baseline_currency_rupee_24"
+        android:id="@+id/pfEditText"
+        android:layout_below="@id/daEditText"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/joindateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pfEditText"
+        android:layout_gravity="left"
+        android:layout_marginTop="16dp"
+        android:text="Select Month"
+        android:textSize="18sp" />
+
+     <!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Joining Date"
+        android:id="@+id/joiningDateEditText"
+        android:layout_below="@id/pfEditText"
+        android:layout_marginBottom="8dp" />-->
+
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/joindateText"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Select Month" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No of Working Days"
+        android:drawableLeft="@drawable/baseline_time_to_leave_24"
+        android:id="@+id/workingDaysEditText"
+        android:layout_below="@id/monthSpinner"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Salary"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnCalculate"
+        android:layout_below="@id/workingDaysEditText"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Salary:"
+        android:id="@+id/totalSalaryLabel"
+        android:layout_below="@id/workingDaysEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalSalaryTextView"
+        android:layout_below="@id/totalSalaryLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnback"
+        android:layout_below="@id/totalSalaryTextView"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

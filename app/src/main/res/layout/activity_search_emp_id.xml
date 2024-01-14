@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/salaryCalculatorImageView"
+        android:layout_width="380dp"
+        android:layout_height="377dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="center"
+        android:src="@drawable/regis"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/searchIdHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search ID Form"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Employee by Initials"
+        android:drawableLeft="@drawable/baseline_account_box_24"
+        android:id="@+id/searchEmp"
+        android:layout_below="@id/searchIdHeading"
+        android:layout_marginBottom="8dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Employee"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnSearchEmp"
+        android:layout_below="@id/searchEmp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/nameSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnSearchEmp"
+        android:layout_marginTop="26dp"
+        android:drawableLeft="@drawable/baseline_email_24" />
+
+    <EditText
+        android:id="@+id/emailEdtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameSpinner"
+        android:layout_marginTop="50dp"
+        android:hint="Email (example@gmail.com)"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEdtText"
+        android:layout_marginTop="55dp"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchButton"
+        android:text=" "
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="65dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uname"
+        android:text=" "
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>
+
